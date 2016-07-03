@@ -1,0 +1,7 @@
+(set-language-environment "Japanese")
+(set-terminal-coding-system 'sjis-dos)
+(set-buffer-file-coding-system 'utf-8)
+(set-keyboard-coding-system 'sjis-dos)
+(set-selection-coding-system 'sjis-dos)
+(modify-coding-system-alist 'process""'sjis-dos)
+(setq default-buffer-file-coding-system 'utf-8)
