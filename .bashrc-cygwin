@@ -205,5 +205,5 @@ export LESSCHARSET LANG OUTPUT_CHARSET
 export GIT_SSH=/usr/bin/ssh
 export SVN_SSH=/usr/bin/ssh
 
-resp/authlogin.sh
+git/config/authlogin.sh
 
