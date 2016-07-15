@@ -2,13 +2,13 @@
 
 case "$WINDIR" in
 *Windows*)
-	IFCONFIG=ipconfig
+	IFCONFIG="ipconfig | iconv -f SJIS"
 	;;
 *)
 	IFCONFIG=/sbin/ifconfig
 esac
 
-$IFCONFIG | grep --text '10\.'
+eval $IFCONFIG | grep --text '10\.'
 
 if [ -f ~/.scode ]; then
 	SCODE=`cat ~/.scode`
