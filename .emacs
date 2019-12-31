@@ -27,6 +27,13 @@
           '(lambda ()
              (setq c-basic-offset 4)))
 
+(add-hook 'python-mode-hook
+		 '(lambda ()
+			(setq indent-tabs-mode t)
+			(setq indent-level 4)
+			(setq python-indent 4)
+			(setq tab-width 4)))
+
 (load "~/.emacs-keybind.el")
 (load "~/.emacs-japanese.el")
 
