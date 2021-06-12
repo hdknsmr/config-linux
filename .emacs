@@ -37,3 +37,5 @@
 (load "~/.emacs-keybind.el")
 (load "~/.emacs-japanese.el")
 
+(setq-default mode-line-buffer-identification
+			  `(,(propertize "%b" 'face '(:foreground "blue"))))
