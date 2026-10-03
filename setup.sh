@@ -8,5 +8,9 @@ ln -s $dir/.emacs-keybind.el ~/
 ln -s $dir/.screenrc ~/
 ln -s $dir/.tmux.conf ~/
 
+if ! grep '# git' ~/.bashrc 2>&1 > /dev/null ; then
+    cat $dir/bashrc-git.txt >> ~/.bashrc
+fi
+
 echo 'refer docker_config.json for Docker'
 

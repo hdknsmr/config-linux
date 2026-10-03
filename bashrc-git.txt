@@ -1,0 +1,13 @@
+# git
+git_branch_line() {
+    local branch
+    branch=$(git branch --show-current 2>/dev/null)
+
+    if [ -n "$branch" ]; then
+        printf '\e[1;35m[%s]\n\e[0m' "$branch"
+    fi
+}
+
+PS1='$(git_branch_line)'"$PS1"
+
+
